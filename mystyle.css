@@ -1,0 +1,116 @@
+:root {
+  --brand: #2e6b0f;    
+  --accent: #a3d313;  
+  --muted: #f7f8f5;
+  --card: #ffffff;
+  --text: #1f2933;
+}
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Kanit', sans-serif ;
+  background: var(--muted);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+/* Topbar */
+.topbar {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.35rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/* Navigation */
+.main-nav {
+  background: linear-gradient(180deg, var(--brand), #265a0c);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.nav-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+}
+
+.menu li a:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+
+.menu li a.active {
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 600;
+}
+
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: var(--text);
+}
+
+
+.btn.small {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+}
